@@ -41,11 +41,19 @@ const Containers = () => {
       {allLines.map((line, index) => (
         <div key={index} className="lineSection" ref={sectionRefs[line.id]}>
           <Header key={index} header={line.header} />
-          {line.categories.map((category, catIndex) => (
-            <>
-              <LineCategory key={catIndex} line={category} />
-            </>
-          ))}
+          {line.categories.map((category, catIndex) => {
+            const isLast = catIndex === line.categories.length - 1;
+            return (
+              <>
+                <LineCategory key={catIndex} line={category} />
+                {isLast ? (
+                  <div className="endOfCategory" />
+                ) : (
+                  <div className="separatorLine" />
+                )}
+              </>
+            );
+          })}
         </div>
       ))}
     </section>

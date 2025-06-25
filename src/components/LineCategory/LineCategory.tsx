@@ -28,7 +28,6 @@ const LineCategory = ({ line }: { line: ConCategory }) => {
             );
           })}
       </div>
-      <div className="separatorLine" />
     </section>
   );
 };

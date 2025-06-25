@@ -36,7 +36,9 @@
   width: 90px;
 }
 
-
+.endOfCategory {
+  height: 30vh;
+}
 
 @media (min-width: 600px) {
   .linesButtons {
