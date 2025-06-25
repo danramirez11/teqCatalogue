@@ -1,9 +1,11 @@
+import "./Containers.css";
+
 const Containers = () => {
   return (
-    <div>
-      <h1>Containers</h1>
+    <section className="page conatinersPage">
+      <h1>Catálogo Envases</h1>
       <p>This is the Containers page.</p>
-    </div>
+    </section>
   );
 };
 

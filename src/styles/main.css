@@ -3,3 +3,29 @@
     "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
+:root {
+  --brand-blue: #142c76;
+  --brand-green: #c3d11a;
+  --primary-blue: #2970e9;
+  --primary-green: #29c86f;
+  --primary-blue-hover: #1f5bbd;
+  --primary-green-hover: #1f9e5c;
+
+  --black: #191919;
+  --dark-gray: #333333;
+  --gray: #666666;
+  --light-gray: #999999;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: var(--black);
+}

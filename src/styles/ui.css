@@ -1,0 +1,41 @@
+button {
+  background-color: var(--gray);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 32px;
+}
+
+button:hover {
+  background-color: var(--dark-gray);
+}
+
+button.green {
+  background-color: var(--primary-green);
+  color: white;
+}
+
+button.green:hover {
+  background-color: var(--primary-green-hover);
+}
+
+button.blue {
+  background-color: var(--primary-blue);
+  color: white;
+}
+
+button.blue:hover {
+  background-color: var(--primary-blue-hover);
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 0;
+}

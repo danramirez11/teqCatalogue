@@ -7,7 +7,9 @@ const Home = () => {
     <>
       <h1>home</h1>
 
-      <button onClick={() => navigate("/envases")}>envases</button>
+      <button className="green" onClick={() => navigate("/envases")}>
+        envases
+      </button>
     </>
   );
 };
