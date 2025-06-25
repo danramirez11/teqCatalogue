@@ -34,3 +34,9 @@
   padding: 0.3rem 0.8rem;
   border-radius: 9999px;
 }
+
+@media (min-width: 600px) {
+  .header img {
+    height: 130px;
+  }
+}

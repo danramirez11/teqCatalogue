@@ -18,7 +18,7 @@ const Header = ({ header }: { header: ConHeader }) => {
             );
           })}
       </div>
-      <hr />
+      <div className="separatorLine" />
     </section>
   );
 };

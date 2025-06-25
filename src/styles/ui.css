@@ -40,8 +40,13 @@ button.blue:hover {
   margin: 0;
 }
 
-hr {
-  margin-top: 1rem;
-  border: none;
-  border-top: 1px solid var(--light-gray);
+.separatorLine {
+  height: 0.67px;
+  width: 100%;
+  background-color: var(--light-gray);
+  margin: 1rem 0;
+}
+
+.textBlue {
+  color: var(--primary-blue);
 }

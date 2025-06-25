@@ -4,6 +4,7 @@ import { allLines } from "../../data/containers";
 import Header from "../../components/Header/Header";
 import LineCategory from "../../components/LineCategory/LineCategory";
 import useSectionRefs from "../../hooks/useRefs";
+import logo from "../../assets/logo-todo-envases.png";
 
 const Containers = () => {
   const sectionRefs = useSectionRefs(allLines.map((line) => line.id));
@@ -27,11 +28,23 @@ const Containers = () => {
         ))}
       </section>
 
+      <section className="separator">
+        <img src={logo} alt="Logo Todo Envases y Químicos" />
+        <p>
+          <b>
+            Variedad de tamaños y estilos para
+            <span className="textBlue"> adaptarse a tu negocio.</span>
+          </b>
+        </p>
+      </section>
+
       {allLines.map((line, index) => (
         <div key={index} className="lineSection" ref={sectionRefs[line.id]}>
           <Header key={index} header={line.header} />
           {line.categories.map((category, catIndex) => (
-            <LineCategory key={catIndex} line={category} />
+            <>
+              <LineCategory key={catIndex} line={category} />
+            </>
           ))}
         </div>
       ))}

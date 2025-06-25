@@ -17,16 +17,18 @@ const LineCategory = ({ line }: { line: ConCategory }) => {
           })}
         </div>
       )}
-      {line.images &&
-        line.images.length > 0 &&
-        line.images.map((i, j) => {
-          return (
-            <div key={j} className="image">
-              <img src={i} alt={i} />
-            </div>
-          );
-        })}
-      <hr />
+      <div className="images">
+        {line.images &&
+          line.images.length > 0 &&
+          line.images.map((i, j) => {
+            return (
+              <div key={j} className="image">
+                <img src={i} alt={i} />
+              </div>
+            );
+          })}
+      </div>
+      <div className="separatorLine" />
     </section>
   );
 };
