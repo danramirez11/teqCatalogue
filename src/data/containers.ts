@@ -2,6 +2,7 @@ import type { ConLine } from "../types/containers";
 import { images } from "./images";
 
 const PharmacyLine: ConLine = {
+  id: "pharmacy",
   header: {
     name: "Línea Famacéutica",
     desc: "Envases para",

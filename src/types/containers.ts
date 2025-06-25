@@ -12,6 +12,7 @@ export interface ConCategory {
 }
 
 export interface ConLine {
+  id: string;
   header: ConHeader;
   categories: ConCategory[];
 }

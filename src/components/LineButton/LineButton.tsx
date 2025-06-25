@@ -8,9 +8,14 @@ interface LineButtonProps {
 
 const LineButton = ({ name, onClick, image }: LineButtonProps) => {
   return (
-    <button className="lineButton" onClick={onClick}>
-      <img src={image} alt={name} />
-      <span>{name}</span>
+    <button
+      className="lineButton"
+      onClick={onClick}
+      style={{
+        backgroundImage: `linear-gradient(to top, rgba(255,255,255,0.8), transparent), url("${image}")`,
+      }}
+    >
+      <h3>{name}</h3>
     </button>
   );
 };

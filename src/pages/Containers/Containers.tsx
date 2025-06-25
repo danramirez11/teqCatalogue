@@ -1,30 +1,32 @@
 import LineButton from "../../components/LineButton/LineButton";
 import "./Containers.css";
-import { images } from "../../data/images";
-import React from "react";
 import { allLines } from "../../data/containers";
 import Header from "../../components/Header/Header";
 import LineCategory from "../../components/LineCategory/LineCategory";
+import useSectionRefs from "../../hooks/useRefs";
 
 const Containers = () => {
-  const pharmacyRef = React.useRef<HTMLDivElement>(null);
+  const sectionRefs = useSectionRefs(allLines.map((line) => line.id));
 
-  const scrollToPosition = (ref: React.RefObject<HTMLDivElement | null>) => {
-    ref.current?.scrollIntoView({ behavior: "smooth" });
+  const scrollToSection = (id: string) => {
+    sectionRefs[id]?.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <section className="page conatinersPage">
       <h1>Catálogo Envases</h1>
 
-      <LineButton
-        name={"Línea Farmacéutica"}
-        image={images.varsol}
-        onClick={() => scrollToPosition(pharmacyRef)}
-      />
+      {allLines.map((line, index) => (
+        <LineButton
+          key={index}
+          name={line.header.name}
+          image={line.header.image}
+          onClick={() => scrollToSection(line.id)}
+        />
+      ))}
 
       {allLines.map((line, index) => (
-        <div className="divLine" ref={pharmacyRef}>
+        <div key={index} className="lineSection" ref={sectionRefs[line.id]}>
           <Header key={index} header={line.header} />
           {line.categories.map((category, catIndex) => (
             <LineCategory key={catIndex} line={category} />
