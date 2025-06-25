@@ -7,15 +7,17 @@ const Header = ({ header }: { header: ConHeader }) => {
       <img src={header.image} alt="" />
       <h1>{header.name}</h1>
       <p>{header.desc}</p>
-      {header.tags &&
-        header.tags.length > 0 &&
-        header.tags.map((t, i) => {
-          return (
-            <p key={i} className="tag">
-              {t}
-            </p>
-          );
-        })}
+      <div className="tags">
+        {header.tags &&
+          header.tags.length > 0 &&
+          header.tags.map((t, i) => {
+            return (
+              <p key={i} className="tag">
+                {t}
+              </p>
+            );
+          })}
+      </div>
       <hr />
     </section>
   );

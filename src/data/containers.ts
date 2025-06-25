@@ -6,18 +6,26 @@ const PharmacyLine: ConLine = {
   header: {
     name: "Línea Famacéutica",
     desc: "Envases para",
-    image: images.varsol,
+    image: images["150_varsol"].src,
     tags: ["Salud", "Bienestar", "Medicamentos"],
   },
   categories: [
     {
       name: "Goteros",
-      images: [images.varsol],
+      images: [
+        images.gotero_homeopatico.src,
+        images.gotero_laboratorio_blanco.src,
+        images.gotero_laboratorio_natural.src,
+      ],
     },
     {
       name: "Jaraberos",
-      lids: [images.varsol],
-      images: [images.varsol],
+      lids: [images.tapa_distop_24_410.src],
+      images: [
+        images.jarabero_pet_ambar.src,
+        images.jarabero_pet_blanco.src,
+        images.jarabero_pet_cristal.src,
+      ],
     },
   ],
 };
