@@ -27,8 +27,8 @@
 }
 
 .lids .lid img {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -48,5 +48,6 @@
   width: 100%;
   border-radius: 16px;
   object-fit: cover;
-  display: block;
+  transform: scale(1.19);
+  transform-origin: center;
 }
