@@ -39,3 +39,9 @@ button.blue:hover {
   padding: 20px;
   margin: 0;
 }
+
+hr {
+  margin-top: 1rem;
+  border: none;
+  border-top: 1px solid var(--light-gray);
+}

@@ -16,14 +16,16 @@ const Containers = () => {
     <section className="page conatinersPage">
       <h1>Catálogo Envases</h1>
 
-      {allLines.map((line, index) => (
-        <LineButton
-          key={index}
-          name={line.header.name}
-          image={line.header.image}
-          onClick={() => scrollToSection(line.id)}
-        />
-      ))}
+      <section className="linesButtons">
+        {allLines.map((line, index) => (
+          <LineButton
+            key={index}
+            name={line.header.name}
+            image={line.header.image}
+            onClick={() => scrollToSection(line.id)}
+          />
+        ))}
+      </section>
 
       {allLines.map((line, index) => (
         <div key={index} className="lineSection" ref={sectionRefs[line.id]}>

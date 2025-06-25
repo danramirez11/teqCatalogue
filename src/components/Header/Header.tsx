@@ -1,7 +1,7 @@
 import type { ConHeader } from "../../types/containers";
 import "./Header.css";
 
-const Header = ({header}: {header: ConHeader}) => {
+const Header = ({ header }: { header: ConHeader }) => {
   return (
     <section className="header">
       <img src={header.image} alt="" />

@@ -26,6 +26,7 @@ const LineCategory = ({ line }: { line: ConCategory }) => {
             </div>
           );
         })}
+      <hr />
     </section>
   );
 };
