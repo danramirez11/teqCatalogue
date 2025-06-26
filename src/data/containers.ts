@@ -44,7 +44,11 @@ const PharmacyLine: ConLine = {
     },
     {
       name: "Otros",
-      images: [images.pomada_20.src, images.vinilo_tempera.src],
+      images: [
+        images.pomada_20.src,
+        images.vinilo_tempera.src,
+        images.pastillero_120_80_40_pote.src,
+      ],
     },
   ],
 };
@@ -78,7 +82,12 @@ const cosmeticLine: ConLine = {
     },
     {
       name: "Tapa 28mm",
-      images: [images.bala_pet_grandes.src],
+      images: [
+        images.bala_pet_grandes_con_tapas.src,
+        images["440_blanco_transparente_con_tapas"].src,
+        images.bala_pet_blanco.src,
+        images.bala_neutro.src,
+      ],
     },
     {
       name: "Tapa 24mm",
@@ -86,11 +95,15 @@ const cosmeticLine: ConLine = {
         images.bala_120_250_r24_con_tapas.src,
         images.bala_250_120_r24_con_tapas.src,
         images.bala_pet_120_250_r24.src,
+        images.champa_a_victoria_210_250_260_con_tapas.src,
       ],
     },
     {
       name: "Tapa 18mm",
-      images: [images.bala_pet_peque_os.src],
+      images: [
+        images.bala_pet_peque_os.src,
+        images.removedor_geordy_champa_a_con_tapas.src,
+      ],
     },
     {
       name: "Otros",
@@ -122,30 +135,35 @@ const foodLine: ConLine = {
       "Salsas",
       "Jugos",
       "Agua",
-      "Arrechón / Viche",
+      "Arrechón-Viche",
       "Aceite",
+      "Miel",
     ],
   },
   categories: [
     {
-      name: "Tapas 28mm",
-      images: [images.salsero_perry.src],
+      name: "Agua",
+      images: [images.ondas_agua_con_color.src],
     },
     {
-      name: "Bomboneras, Garrafas y Agua",
+      name: "Bomboneras",
+      images: [images.bomboneras_redondos.src],
+    },
+    {
+      name: "Garrafas-Yogurt",
       images: [
-        images.bomboneras_cuadradas.src,
-        images.bomboneras_redondos.src,
-
         images.garr_yogurt.src,
         images.garr_yogurt_1800.src,
-
-        images.ondas_agua_con_color.src,
+        images.garr_original_redonda.src,
       ],
     },
     {
-      name: "Arrechón / Viche",
+      name: "Miel, Arrechón-Viche",
       images: [images.caneca_botellas.src],
+    },
+    {
+      name: "Salsas y Aderezos",
+      images: [images.salsero_perry.src],
     },
   ],
 };
@@ -182,15 +200,20 @@ const CleaningLine: ConLine = {
       ],
     },
     {
-      name: "Jaboneros",
+      name: "Tapa 28mm",
       images: [
         images.jaboneros_campana_con_tapas.src,
         images.jaboneros_campana_con_cremera.src,
+        images["500_varsol_generico_cuadrado"].src,
       ],
     },
     {
-      name: "Otros",
-      images: [images.limpiavidrios_anatomico.src, images.aseo.src],
+      name: "Atomizadores",
+      images: [
+        images.bala_pet_grandes_con_pistola_spray_atomizadores.src,
+        images.limpiavidrios_anatomico.src,
+        images.aseo.src,
+      ],
     },
   ],
 };
@@ -271,13 +294,15 @@ const lidsLine: ConLine = {
       images: [images.tapa_sencilla_18.src, images.tapa_sencilla_24.src],
     },
     {
-      name: "Otras",
+      name: "Tapas de Seguridad",
       images: [
-        images.tapa_38_seguridad_garrafa.src,
-        images.tapa_gotero.src,
         images.tapa_seguridad_28.src,
-        images.tapa_twist_28.src,
+        images.tapa_38_seguridad_garrafa.src,
       ],
+    },
+    {
+      name: "Otras",
+      images: [images.tapa_gotero.src, images.tapa_twist_28.src],
     },
   ],
 };
