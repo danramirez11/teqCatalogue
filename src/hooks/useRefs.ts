@@ -1,17 +1,19 @@
-import { useMemo, useRef } from "react";
+import React, { useRef } from "react";
 
 function useSectionRefs<T extends string>(
   ids: T[]
 ): Record<T, React.RefObject<HTMLDivElement | null>> {
-  const refs = useMemo(() => {
-    const obj = {} as Record<T, React.RefObject<HTMLDivElement | null>>;
-    ids.forEach((id) => {
-      // eslint-disable-next-line react-hooks/rules-of-hooks
-      obj[id] = useRef<HTMLDivElement>(null);
-    });
-    return obj;
-  }, [ids]);
+  const refs = useRef<Record<T, React.RefObject<HTMLDivElement | null>>>(
+    {} as Record<T, React.RefObject<HTMLDivElement | null>>
+  );
 
-  return refs;
+  ids.forEach((id) => {
+    if (!refs.current[id]) {
+      refs.current[id] = React.createRef<HTMLDivElement>();
+    }
+  });
+
+  return refs.current;
 }
+
 export default useSectionRefs;
