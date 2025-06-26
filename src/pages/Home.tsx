@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router";
 import logo from "../assets/logo-todo-envases.png";
 import "./Home.css";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -18,6 +19,23 @@ const Home = () => {
           Envases de Vidrio
         </button>
       </div>
+
+      <section className="social-media">
+        <FaInstagram
+          size={30}
+          onClick={() =>
+            window.open("https://www.instagram.com/tequimicos/", "_blank")
+          }
+          cursor={"pointer"}
+        />
+        <FaFacebook
+          size={30}
+          onClick={() =>
+            window.open("https://www.facebook.com/envasesyquimicos", "_blank")
+          }
+          cursor={"pointer"}
+        />
+      </section>
     </section>
   );
 };

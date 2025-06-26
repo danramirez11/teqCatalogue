@@ -15,6 +15,7 @@ const PharmacyLine: ConLine = {
       "Pastillas",
       "Cápsulas",
       "Jarabes",
+      "Productos Homeopáticos",
     ],
   },
   categories: [
@@ -65,6 +66,7 @@ const cosmeticLine: ConLine = {
       "Acondicionador",
       "Jabón",
       "Crema corporal",
+      "Exfoliante",
       "Antibacterial",
       "Cremas",
       "Gel",
@@ -177,7 +179,6 @@ const CleaningLine: ConLine = {
       "Antibacterial",
       "Crema",
       "Jabón",
-      "Exfoliante",
       "Aromatizante",
       "Limpiador de pisos",
       "Blanqueador",

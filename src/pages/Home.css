@@ -3,6 +3,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  position: relative;
+  text-align: center;
+  height: 90vh;
 }
 
 .homePage img {
@@ -16,4 +19,13 @@
   gap: 1rem;
   padding: 1rem;
   width: 50%;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
 }
