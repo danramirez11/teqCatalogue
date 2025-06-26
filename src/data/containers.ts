@@ -87,7 +87,6 @@ const cosmeticLine: ConLine = {
         images.bala_pet_grandes_con_tapas.src,
         images["440_blanco_transparente_con_tapas"].src,
         images.bala_pet_blanco.src,
-        images.bala_neutro.src,
       ],
     },
     {
@@ -110,11 +109,12 @@ const cosmeticLine: ConLine = {
       name: "Otros",
       images: [
         images.cosmetico_cilindrico_splash.src,
+        images.bala_neutro.src,
+        images.espumeros.src,
+        images.talquera.src,
         images.antibacterial_pet_y_colores.src,
         images.bolita_100.src,
-        images.talquera.src,
         images.colapsible.src,
-        images.espumeros.src,
         images.probador_rollon.src,
       ],
     },
@@ -134,8 +134,7 @@ const foodLine: ConLine = {
       "Mecato",
       "Yogurth",
       "Salsas",
-      "Jugos",
-      "Agua",
+      "Agua-Jugos-Bebidas",
       "Arrechón-Viche",
       "Aceite",
       "Miel",
@@ -175,12 +174,11 @@ const CleaningLine: ConLine = {
     name: "Línea de Aseo",
     desc: "Envases para",
     tags: [
-      "Antibaterial",
+      "Antibacterial",
       "Crema",
       "Jabón",
       "Exfoliante",
       "Aromatizante",
-      "Suavizante",
       "Limpiador de pisos",
       "Blanqueador",
       "Desengrasante",
@@ -216,6 +214,10 @@ const CleaningLine: ConLine = {
         images.aseo.src,
       ],
     },
+    {
+      name: "Otros",
+      images: [images["150_varsol"].src],
+    },
   ],
 };
 
@@ -240,16 +242,24 @@ const glassLine: ConLine = {
   },
   categories: [
     {
-      name: "Envases",
+      name: "Goteros",
+      images: [images.goteros_vidrio.src],
+    },
+    {
+      name: "Bebidas",
+      images: [images.vidrio_bebida.src],
+    },
+    {
+      name: "Compotas y Conservas",
+      images: [images.vidrio_compota_mayonesa.src, images.vidrio_conserva.src],
+    },
+    {
+      name: "Otros",
       images: [
         images.vidrio_ambar_30_60.src,
-        images.vidrio_bebida.src,
-        images.vidrio_compota_mayonesa.src,
-        images.vidrio_conserva.src,
+        images.vidrio_vela_pudin_50_corcho.src,
         images.vidrio_diamante_miel.src,
         images.vidrio_peque_os_compota_30_hexagonal_45.src,
-        images.vidrio_vela_pudin_50_corcho.src,
-        images.goteros_vidrio.src,
       ],
     },
   ],
@@ -308,10 +318,11 @@ const lidsLine: ConLine = {
 };
 
 export const allLines: ConLine[] = [
-  PharmacyLine,
   cosmeticLine,
   foodLine,
   CleaningLine,
-  glassLine,
+  PharmacyLine,
   lidsLine,
 ];
+
+export const onlyGlassLine: ConLine[] = [glassLine];

@@ -15,7 +15,7 @@ const Containers = () => {
 
   return (
     <section className="page conatinersPage">
-      <h1>Catálogo Envases</h1>
+      <h1>Catálogo Envases Plásticos</h1>
 
       <section className="linesButtons">
         {allLines.map((line, index) => (

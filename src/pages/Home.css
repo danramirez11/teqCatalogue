@@ -8,3 +8,12 @@
 .homePage img {
   width: 120px;
 }
+
+.homePage .buttons {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  width: 50%;
+}

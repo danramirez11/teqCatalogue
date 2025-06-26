@@ -10,9 +10,14 @@ const Home = () => {
       <img src={logo} alt="Logo Todo Envases Y Químicos" />
       <h3>Bienvenido a nuestro catálogo</h3>
       <p>¿Qué te gustaría explorar?</p>
-      <button className="blue" onClick={() => navigate("/envases")}>
-        Envases
-      </button>
+      <div className="buttons">
+        <button className="blue" onClick={() => navigate("/envases-plasticos")}>
+          Envases Plásticos
+        </button>
+        <button className="blue" onClick={() => navigate("/envases-vidrio")}>
+          Envases de Vidrio
+        </button>
+      </div>
     </section>
   );
 };
