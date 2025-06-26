@@ -68,6 +68,7 @@ const cosmeticLine: ConLine = {
       "Antibacterial",
       "Cremas",
       "Gel",
+      "Splash",
     ],
   },
   categories: [
@@ -123,7 +124,7 @@ const cosmeticLine: ConLine = {
 const foodLine: ConLine = {
   id: "food",
   header: {
-    name: "Línea Alimentaria",
+    name: "Línea Alimentos",
     desc: "Envases para",
     image:
       "https://nutritionrealm.com/wp-content/uploads/2020/05/Full-Liquid-Diet-Foods-Plan-Benefits-and-How-It-Works-scaled.jpeg",
@@ -226,16 +227,15 @@ const glassLine: ConLine = {
     image:
       "https://images.squarespace-cdn.com/content/v1/5e1077b0019b062397153b23/1598924780140-S0K1H3TGXA2375EVUYJX/image-asset.jpeg",
     tags: [
-      "Perfumería",
-      "Serum",
-      "Aceites",
-      "Esencias",
+      "Jarabes",
       "Alimentos",
-      "Belleza",
       "Mermelada",
       "Dulces",
       "Bebidas",
-      "Jarabes",
+      "Velas",
+      "Serum",
+      "Aceites",
+      "Esencias",
     ],
   },
   categories: [
