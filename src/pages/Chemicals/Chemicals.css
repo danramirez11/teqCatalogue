@@ -1,0 +1,32 @@
+.chemicalsPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chemicalsImage {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.chemProducts {
+  width: 100%;
+}
+
+.chemCategory {
+  width: 100%;
+}
+
+.catChemicals {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 0;
+}
+
+@media (min-width: 600px) {
+  .chemicalsImage {
+    height: 130px;
+  }
+}

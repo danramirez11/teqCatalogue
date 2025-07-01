@@ -1,5 +1,5 @@
 export const chemicals = {
-  aceites: [
+  Aceites: [
     "Aceite Almendras",
     "Aceite De Silicona Inclu",
     "Aceite De Trementina",
@@ -8,7 +8,7 @@ export const chemicals = {
     "Aceite Ricino",
     "Peg 40 Aceite Castor Hidrog",
   ],
-  acidos: [
+  Acidos: [
     "Acido Acetico",
     "Acido Borico Peru",
     "Acido Borico Turquia",
@@ -22,7 +22,7 @@ export const chemicals = {
     "Acido Sulfamico 7563",
     "Acido Sulfonico",
   ],
-  alcoholes: [
+  Alcoholes: [
     "Alcohol 70% Litro",
     "Alcohol Cetilico",
     "Alcohol Cetoestearico",
@@ -47,7 +47,7 @@ export const chemicals = {
     "Propilparabeno",
     "Pvp 30 (Luviscol)",
   ],
-  limpieza: [
+  Limpieza: [
     "Desengrasabte Estufas",
     "Desengrasante Arrancamax",
     "Desengrasate  Industrial",
@@ -100,9 +100,9 @@ export const chemicals = {
     "Talco Nacional",
     "Arena Silice",
   ],
-  aromas: ["Incienso /", "Sahumerio Revuelto X 7 Productos"],
+  Aromas: ["Incienso /", "Sahumerio Revuelto X 7 Productos"],
   "Extractos y Biológicos": ["Extractos Industriales", "Feromonas"],
-  otros: [
+  Otros: [
     "Acetato Isoamilo",
     "Acronal Rh",
     "Acronal Pquim",
