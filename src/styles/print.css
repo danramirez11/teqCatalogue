@@ -1,0 +1,17 @@
+@media print {
+  .wppCircle {
+    display: none;
+  }
+
+  .linesButtons {
+    display: none;
+  }
+
+  .separator {
+    display: none;
+  }
+
+  .endOfCategory {
+    height: 2rem;
+  }
+}
