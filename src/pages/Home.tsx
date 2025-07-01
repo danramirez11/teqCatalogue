@@ -21,6 +21,7 @@ const Home = () => {
         <button className="blue" onClick={() => navigate("/quimicos")}>
           Químicos
         </button>
+        <p>Presiona un botón para ver su respectivo catálogo</p>
       </div>
 
       <section className="social-media">

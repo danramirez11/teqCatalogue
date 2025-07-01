@@ -5,7 +5,7 @@ const ChemicalsPage = () => {
   return (
     <section className="page chemicalsPage">
       <img
-        src="https://www.pwc.com/content/dam/pwc/gx/en/issues/esg/gettyimages-521813119-cc-metadata.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+        src="https://www.niir.org/blog/wp-content/uploads/2020/08/Chemicals.jpg"
         alt=""
         className="chemicalsImage"
       />
