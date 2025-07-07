@@ -1,3 +1,4 @@
+import Back from "../../components/Back/Back";
 import Header from "../../components/Header/Header";
 import LineCategory from "../../components/LineCategory/LineCategory";
 import { onlyGlassLine } from "../../data/containers";
@@ -5,6 +6,7 @@ import { onlyGlassLine } from "../../data/containers";
 const ContainerGlassOnly = () => {
   return (
     <section className="page conatinersPage">
+      <Back />
       <h1>Catálogo Envases de Vidrio</h1>
 
       {onlyGlassLine.map((line, index) => (

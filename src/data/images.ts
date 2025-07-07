@@ -111,6 +111,25 @@ const imageModules = import.meta.glob("../photos/*.jpg", {
   import: "default",
 });
 
+//CODE FOR GENERATING THE TYPES (KIND OF)
+/*const generatedImageData: Record<string, string> = {};
+
+for (const path in imageModules) {
+  const filename = path.split("/").pop()!.replace(".jpg", "");
+  const key = filename
+    .toLowerCase()
+    .replace(/[^a-z0-9]/gi, "_") // replace spaces & symbols with _
+    .replace(/_+/g, "_") // reduce multiple underscores
+    .replace(/^_+|_+$/g, ""); // trim start/end
+
+  generatedImageData[key] = filename;
+}
+
+console.log(
+  "✅ Paste this into your code:\n\n",
+  JSON.stringify(generatedImageData, null, 2)
+);*/
+
 for (const path in imageModules) {
   const src = imageModules[path] as string;
 

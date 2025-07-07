@@ -13,4 +13,6 @@
   justify-content: center;
   color: white;
   box-shadow: 0 2px 5px rgba(16, 255, 3, 0.442);
+
+  cursor: pointer;
 }

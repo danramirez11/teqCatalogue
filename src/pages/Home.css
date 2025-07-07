@@ -26,6 +26,12 @@
   flex-direction: row;
   gap: 2rem;
   padding: 1rem;
-  position: absolute;
-  bottom: 0;
+}
+
+.clickText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: #333;
 }

@@ -5,6 +5,7 @@ import Header from "../../components/Header/Header";
 import LineCategory from "../../components/LineCategory/LineCategory";
 import useSectionRefs from "../../hooks/useRefs";
 import logo from "../../assets/logo-todo-envases.png";
+import Back from "../../components/Back/Back";
 
 const Containers = () => {
   const sectionRefs = useSectionRefs(allLines.map((line) => line.id));
@@ -15,6 +16,7 @@ const Containers = () => {
 
   return (
     <section className="page conatinersPage">
+      <Back />
       <h1>Catálogo Envases Plásticos</h1>
 
       <section className="linesButtons">

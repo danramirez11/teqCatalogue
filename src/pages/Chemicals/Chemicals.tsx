@@ -1,9 +1,11 @@
+import Back from "../../components/Back/Back";
 import { chemicals } from "../../data/chemicals";
 import "./Chemicals.css";
 
 const ChemicalsPage = () => {
   return (
     <section className="page chemicalsPage">
+      <Back />
       <img
         src="https://www.niir.org/blog/wp-content/uploads/2020/08/Chemicals.jpg"
         alt=""
