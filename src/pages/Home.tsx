@@ -3,6 +3,8 @@ import logo from "../assets/logo-todo-envases.png";
 import "./Home.css";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { TbHandClick } from "react-icons/tb";
+import { menuButtons } from "../data/buttons";
+import LineButton from "../components/LineButton/LineButton";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -11,36 +13,24 @@ const Home = () => {
     <section className="page homePage">
       <img src={logo} alt="Logo Todo Envases Y Químicos" />
       <h3>Bienvenido a Nuestro Catálogo</h3>
-      <p>¿Qué te Gustaría Explorar?</p>
       <span className="clickText">
         <p>Dale click a los botones azules</p> <TbHandClick />{" "}
       </span>
-      <div className="buttons">
-        <button className="blue" onClick={() => navigate("/envases-plasticos")}>
-          Envases Plásticos
-        </button>
-        <button className="blue" onClick={() => navigate("/envases-vidrio")}>
-          Envases de Vidrio
-        </button>
-        <button
-          className="blue"
-          onClick={() => navigate("/extractos-industriales")}
-        >
-          Extractos Industriales
-        </button>
-        <button
-          className="blue"
-          onClick={() => navigate("/herramientas-emprender")}
-        >
-          Herramientas para Emprender
-        </button>
-        <button className="blue" onClick={() => navigate("/quimicos")}>
-          Productos Químicos
-        </button>
-        <button className="blue" onClick={() => navigate("/tapas")}>
-          Tapas
-        </button>
-      </div>
+      <section className="linesButtons">
+        {menuButtons.map((b, i) => {
+          return (
+            <LineButton
+              name={b.name}
+              image={b.image}
+              key={i}
+              onClick={() => {
+                navigate(b.url);
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+            />
+          );
+        })}
+      </section>
 
       <section className="social-media">
         <FaInstagram

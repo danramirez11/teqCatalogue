@@ -14,4 +14,8 @@
   .endOfCategory {
     height: 2rem;
   }
+
+  .chemCategory img {
+    display: none;
+  }
 }
