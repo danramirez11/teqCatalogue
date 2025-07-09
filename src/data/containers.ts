@@ -149,7 +149,7 @@ const foodLine: ConLine = {
     },
     {
       name: "Bomboneras",
-      images: [images.bomboneras_redondos.src],
+      images: [images.bomboneras_con_dulces.src],
     },
     {
       name: "Garrafas-Yogurt",
@@ -161,7 +161,7 @@ const foodLine: ConLine = {
     },
     {
       name: "Miel, Arrechón-Viche",
-      images: [images.caneca_botellas.src],
+      images: [images.botella_y_caneca_con_colores.src],
     },
     {
       name: "Salsas y Aderezos",
@@ -248,11 +248,15 @@ const glassLine: ConLine = {
     },
     {
       name: "Bebidas",
-      images: [images.vidrio_bebida.src],
+      images: [images.envases_vidrio_bebida.src],
     },
     {
       name: "Compotas y Conservas",
-      images: [images.vidrio_compota_mayonesa.src, images.vidrio_conserva.src],
+      images: [
+        images.vidrio_compota_mayonesa.src,
+        images.vidrio_conserva.src,
+        images.envases_vidrio_mayonesa.src,
+      ],
     },
     {
       name: "Otros",

@@ -35,7 +35,7 @@ const Home = () => {
           Herramientas para Emprender
         </button>
         <button className="blue" onClick={() => navigate("/quimicos")}>
-          Químicos
+          Productos Químicos
         </button>
       </div>
 
