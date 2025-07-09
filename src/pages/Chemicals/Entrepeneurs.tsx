@@ -7,11 +7,6 @@ const Entrepeneurs = () => {
   return (
     <section className="page chemicalsPage">
       <Back />
-      <img
-        src="https://www.niir.org/blog/wp-content/uploads/2020/08/Chemicals.jpg"
-        alt=""
-        className="chemicalsImage"
-      />
       <h1>Herramientas para Emprender</h1>
 
       <section className="separator" style={{ height: "50vh" }}>
@@ -38,9 +33,10 @@ const Entrepeneurs = () => {
 
           return (
             <section className="chemCategory" key={c}>
+              <img src={entrepenursData[key].image} alt="" />
               <h3>{c}</h3>
               <div className="catChemicals">
-                {entrepenursData[key].map((product: string, index) => {
+                {entrepenursData[key].products.map((product: string, index) => {
                   return <p key={index}>{product}</p>;
                 })}
               </div>

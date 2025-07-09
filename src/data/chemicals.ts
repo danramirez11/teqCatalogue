@@ -158,33 +158,46 @@ export const industrialExtracts = [
 ];
 
 export const entrepenursData = {
-  Bases: [
-    "Base Crema Capilar",
-    "Base Crema Corporal",
-    "Base Jabón de Glicerina",
-    "Base Jabón Liquido",
-    "Base Shampoo Líquido",
-    "Base Shampoo Sólido",
-    "Base Suavizante Textil",
-  ],
-  Velas: [
-    "Cera Coco",
-    "Cera Soya",
-    "Cera Vaso",
-    "Chapetas",
-    "Pabilo",
-    "Parafina",
-    "Parafina en Gel",
-    "Pegatinas",
-    "Vibar",
-    "Recipientes de Vidrio",
-  ],
-  Artículos: [
-    "Moldes de Silicona",
-    "Grameras",
-    "Colorantes Vegetales",
-    "Colorantes para Velas",
-    "Extractos Industriales",
-    "Extractos Industriales para Velas",
-  ],
+  Bases: {
+    image:
+      "https://gemalabs.cl/cdn/shop/articles/Screenshot_2024-06-30_at_20.16.24.png?v=1719771432&width=1100",
+    products: [
+      "Base Crema Capilar",
+      "Base Crema Corporal",
+      "Base Jabón de Glicerina",
+      "Base Jabón Liquido",
+      "Base Shampoo Líquido",
+      "Base Shampoo Sólido",
+      "Base Suavizante Textil",
+    ],
+  },
+
+  Velas: {
+    image: "https://i.ytimg.com/vi/Vzt-0IK6FJI/maxresdefault.jpg",
+    products: [
+      "Cera Coco",
+      "Cera Soya",
+      "Cera Vaso",
+      "Chapetas",
+      "Pabilo",
+      "Parafina",
+      "Parafina en Gel",
+      "Pegatinas",
+      "Vibar",
+      "Recipientes de Vidrio",
+    ],
+  },
+
+  Artículos: {
+    image:
+      "https://ohblog.ohgar.com/wp-content/uploads/Moldes-silicona-MAIN.jpg",
+    products: [
+      "Moldes de Silicona",
+      "Grameras",
+      "Colorantes Vegetales",
+      "Colorantes para Velas",
+      "Extractos Industriales",
+      "Extractos Industriales para Velas",
+    ],
+  },
 };
