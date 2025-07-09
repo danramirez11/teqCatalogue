@@ -317,7 +317,12 @@ const lidsLine: ConLine = {
     },
     {
       name: "Otras",
-      images: [images.tapa_gotero.src, images.tapa_twist_28.src],
+      images: [
+        images.tapa_gotero.src,
+        images.tapa_twist_28.src,
+        images.tapa_boticaria_24.src,
+        images.tapa_boticaria_28.src,
+      ],
     },
   ],
 };
@@ -327,7 +332,8 @@ export const allLines: ConLine[] = [
   foodLine,
   CleaningLine,
   PharmacyLine,
-  lidsLine,
 ];
 
 export const onlyGlassLine: ConLine[] = [glassLine];
+
+export const onlyLidsLine: ConLine[] = [lidsLine];

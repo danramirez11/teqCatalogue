@@ -5,6 +5,7 @@ import ContainerGlassOnly from "../pages/Containers/GlassOnly";
 import ChemicalsPage from "../pages/Chemicals/Chemicals";
 import IndExtract from "../pages/Chemicals/IndExctract";
 import Entrepeneurs from "../pages/Chemicals/Entrepeneurs";
+import LidsOnly from "../pages/Containers/LidsOnly";
 
 const routes = createHashRouter([
   { path: "/", element: <Home /> },
@@ -13,6 +14,7 @@ const routes = createHashRouter([
   { path: "/extractos-industriales", element: <IndExtract /> },
   { path: "/quimicos", element: <ChemicalsPage /> },
   { path: "/herramientas-emprender", element: <Entrepeneurs /> },
+  { path: "/tapas", element: <LidsOnly /> },
 ]);
 
 export default routes;

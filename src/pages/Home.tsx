@@ -37,6 +37,9 @@ const Home = () => {
         <button className="blue" onClick={() => navigate("/quimicos")}>
           Productos Químicos
         </button>
+        <button className="blue" onClick={() => navigate("/tapas")}>
+          Tapas
+        </button>
       </div>
 
       <section className="social-media">
