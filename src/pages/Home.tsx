@@ -13,10 +13,7 @@ const Home = () => {
     <section className="page homePage">
       <img src={logo} alt="Logo Todo Envases Y Químicos" />
       <h3>Bienvenido a Nuestro Catálogo</h3>
-      <span className="clickText">
-        <p>Dale click a los botones azules</p> <TbHandClick />{" "}
-      </span>
-      <section className="linesButtons">
+      <section className="linesButtons menuButtons">
         {menuButtons.map((b, i) => {
           return (
             <LineButton
@@ -30,6 +27,7 @@ const Home = () => {
             />
           );
         })}
+        <TbHandClick className="menu-click" size={75} fill="white" />
       </section>
 
       <section className="social-media">

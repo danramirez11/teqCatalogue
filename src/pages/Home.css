@@ -35,3 +35,26 @@
   gap: 0.5rem;
   color: #333;
 }
+
+.menuButtons {
+  position: relative;
+}
+
+.menu-click {
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  transform: rotate(-20deg);
+  animation: clickPulse 1s infinite alternate;
+}
+
+@keyframes clickPulse {
+  0% {
+    transform: rotate(-20deg) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-20deg) scale(1.15);
+    opacity: 0.7;
+  }
+}
