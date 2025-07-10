@@ -213,6 +213,7 @@ const CleaningLine: ConLine = {
         images.bala_pet_grandes_con_pistola_spray_atomizadores.src,
         images.limpiavidrios_anatomico.src,
         images.aseo.src,
+        images.atomizadores_spray_10_a_250.src,
       ],
     },
     {
@@ -316,13 +317,16 @@ const lidsLine: ConLine = {
       ],
     },
     {
+      name: "Boticaria",
+      images: [images.tapa_boticaria_24.src, images.tapa_boticaria_28.src],
+    },
+    {
+      name: "Industriales y semi-indistriales",
+      images: [images.pistola_industrial_y_semi_industrial.src],
+    },
+    {
       name: "Otras",
-      images: [
-        images.tapa_gotero.src,
-        images.tapa_twist_28.src,
-        images.tapa_boticaria_24.src,
-        images.tapa_boticaria_28.src,
-      ],
+      images: [images.tapa_gotero.src, images.tapa_twist_28.src],
     },
   ],
 };
