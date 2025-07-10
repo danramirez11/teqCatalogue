@@ -7,7 +7,7 @@ const IndExtract = () => {
     <section className="page chemicalsPage">
       <Back />
       <img
-        src="https://www.niir.org/blog/wp-content/uploads/2020/08/Chemicals.jpg"
+        src="https://manuartestore.com/colombia/wp-content/uploads/2020/12/AdobeStock_331920136-1024x501-1.jpg"
         alt=""
         className="chemicalsImage"
       />
