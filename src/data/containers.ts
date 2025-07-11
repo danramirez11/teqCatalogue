@@ -22,9 +22,9 @@ const PharmacyLine: ConLine = {
     {
       name: "Goteros",
       images: [
-        images.gotero_homeopatico.src,
         images.gotero_laboratorio_blanco.src,
         images.gotero_laboratorio_natural.src,
+        images.gotero_homeopatico.src,
       ],
     },
     {
@@ -77,16 +77,20 @@ const cosmeticLine: ConLine = {
     {
       name: "Potes",
       images: [
-        images.pote_cosmetico.src,
+        images.pote_1_y_2_onzas.src,
+        images.pote_1000_500_220.src,
         images.pote_500_250_120.src,
+        images.pote_cosmetico.src,
+
         images.pote_pet_tapa_aluminio_350_200.src,
-        images.potes_peque_os_falta_20.src,
+        images.potes_peque_os.src,
       ],
     },
     {
       name: "Tapa 28mm",
       images: [
         images.bala_pet_grandes_con_tapas.src,
+        images.bala_pet_grandes.src,
         images["440_blanco_transparente_con_tapas"].src,
         images.bala_pet_blanco.src,
       ],
@@ -112,6 +116,8 @@ const cosmeticLine: ConLine = {
       images: [
         images.cosmetico_cilindrico_splash.src,
         images.bala_neutro.src,
+        images.atomizadores_spray_10_a_250.src,
+        images.bala_con_fliptop_10_a_250ml.src,
         images.espumeros.src,
         images.talquera.src,
         images.antibacterial_pet_y_colores.src,
@@ -144,12 +150,16 @@ const foodLine: ConLine = {
   },
   categories: [
     {
-      name: "Agua",
+      name: "Agua - Jugos - Bebidas",
       images: [images.ondas_agua_con_color.src],
     },
     {
       name: "Bomboneras",
-      images: [images.bomboneras_con_dulces.src],
+      images: [
+        images.bomboneras_con_dulces.src,
+        images.bomboneras_cuadradas.src,
+        images.bomboneras_redondos.src,
+      ],
     },
     {
       name: "Garrafas-Yogurt",
@@ -218,7 +228,7 @@ const CleaningLine: ConLine = {
     },
     {
       name: "Otros",
-      images: [images["150_varsol"].src],
+      images: [images.galon_pet.src, images["150_varsol"].src],
     },
   ],
 };
@@ -307,7 +317,7 @@ const lidsLine: ConLine = {
     },
     {
       name: "Sencilla",
-      images: [images.tapa_sencilla_18.src, images.tapa_sencilla_24.src],
+      images: [images.tapa_sencilla_18_1.src, images.tapa_sencilla_24_1.src],
     },
     {
       name: "Tapas de Seguridad",
@@ -321,12 +331,19 @@ const lidsLine: ConLine = {
       images: [images.tapa_boticaria_24.src, images.tapa_boticaria_28.src],
     },
     {
-      name: "Industriales y semi-indistriales",
-      images: [images.pistola_industrial_y_semi_industrial.src],
+      name: "Pistolas",
+      images: [
+        images.tapa_pistola_28_varios_dise_os.src,
+        images.pistola_industrial_y_semi_industrial.src,
+      ],
     },
     {
       name: "Otras",
-      images: [images.tapa_gotero.src, images.tapa_twist_28.src],
+      images: [
+        images.tapa_pico_28.src,
+        images.tapa_gotero.src,
+        images.tapa_twist_28_mas_cerca.src,
+      ],
     },
   ],
 };

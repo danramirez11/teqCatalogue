@@ -19,7 +19,12 @@ export const chemicals = {
     "Ácido Salicilico",
     "Ácido Sulfonico",
   ],
-  Alcoholes: ["Alcohol Cetilico", "Alcohol Industrial", "Alcohol Perfumeria"],
+  Alcoholes: [
+    "Alcohol Cetilico",
+    "Alcohol Industrial 96%",
+    "Alcohol Industrial 70%",
+    "Alcohol Perfumeria",
+  ],
   Artículos: [
     "Beaker",
     "Embudos",

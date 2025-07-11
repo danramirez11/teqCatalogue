@@ -77,20 +77,33 @@ const imageData = {
   tapa_38_seguridad_garrafa: "Tapa 38 seguridad Garrafa",
   tapa_boticaria_24: "Tapa Boticaria 24",
   tapa_boticaria_28: "Tapa Boticaria 28",
+  tapa_cremera_28: "Tapa Cremera 28",
+  tapa_cremera_lujo: "Tapa Cremera Lujo",
   tapa_distop_24_410: "Tapa Distop 24 410",
+  tapa_distop_24_otra_toma: "Tapa Distop 24 otra toma",
+  tapa_distop_28_mas_cerca: "Tapa Distop 28 mas cerca",
   tapa_distop_28: "Tapa Distop 28",
   tapa_fliptop_18: "Tapa Fliptop 18",
+  tapa_fliptop_24_natural: "Tapa Fliptop 24 Natural",
+  tapa_fliptop_24_mas_cerca: "Tapa Fliptop 24 mas cerca",
   tapa_fliptop_24: "Tapa Fliptop 24",
+  tapa_fliptop_28_mas_cerca: "Tapa Fliptop 28 mas cerca",
   tapa_fliptop_28: "Tapa Fliptop 28",
   tapa_gotero: "Tapa Gotero",
+  tapa_pico_28: "Tapa Pico 28",
+  tapa_pistola_28_varios_dise_os: "Tapa Pistola 28 varios diseños",
   tapa_push_pull_24: "Tapa Push Pull 24",
   tapa_push_pull_28: "Tapa Push Pull 28",
+  tapa_push_pull_28mm_mas_cerca: "Tapa Push pull 28mm mas cerca",
   tapa_seguridad_28: "Tapa Seguridad 28",
+  tapa_sencilla_18_1: "Tapa Sencilla 18 (1)",
   tapa_sencilla_18: "Tapa Sencilla 18",
+  tapa_sencilla_24_1: "Tapa Sencilla 24 (1)",
   tapa_sencilla_24: "Tapa Sencilla 24",
   tapa_spray_18: "Tapa Spray 18",
   tapa_spray_24: "Tapa Spray 24",
   tapa_spray_28: "Tapa Spray 28",
+  tapa_twist_28_mas_cerca: "Tapa Twist 28 mas cerca",
   tapa_twist_28: "Tapa Twist 28",
   varios_envases: "Varios Envases",
   victoria_champa_a: "Victoria champaña",
@@ -123,7 +136,7 @@ const imageModules = import.meta.glob("../photos/*.jpg", {
 });
 
 //CODE FOR GENERATING THE TYPES (KIND OF)
-/*const generatedImageData: Record<string, string> = {};
+const generatedImageData: Record<string, string> = {};
 
 for (const path in imageModules) {
   const filename = path.split("/").pop()!.replace(".jpg", "");
@@ -139,7 +152,7 @@ for (const path in imageModules) {
 console.log(
   "✅ Paste this into your code:\n\n",
   JSON.stringify(generatedImageData, null, 2)
-);*/
+);
 
 for (const path in imageModules) {
   const src = imageModules[path] as string;
