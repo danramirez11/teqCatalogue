@@ -1,5 +1,8 @@
 import type { ConLine } from "../types/containers";
 import { images } from "./images";
+import { imagesLidsBySize } from "./lidImages";
+
+console.log(imagesLidsBySize);
 
 const PharmacyLine: ConLine = {
   id: "pharmacy",
@@ -88,6 +91,7 @@ const cosmeticLine: ConLine = {
     },
     {
       name: "Tapa 28mm",
+      lids: imagesLidsBySize["28"].map((img) => img.src),
       images: [
         images.bala_pet_grandes_con_tapas.src,
         images.bala_pet_grandes.src,
@@ -97,6 +101,7 @@ const cosmeticLine: ConLine = {
     },
     {
       name: "Tapa 24mm",
+      lids: imagesLidsBySize["24"].map((img) => img.src),
       images: [
         images.bala_120_250_r24_con_tapas.src,
         images.bala_250_120_r24_con_tapas.src,
@@ -106,6 +111,7 @@ const cosmeticLine: ConLine = {
     },
     {
       name: "Tapa 18mm",
+      lids: imagesLidsBySize["18"].map((img) => img.src),
       images: [
         images.bala_pet_peque_os.src,
         images.removedor_geordy_champa_a_con_tapas.src,
@@ -211,6 +217,7 @@ const CleaningLine: ConLine = {
     },
     {
       name: "Tapa 28mm",
+      lids: imagesLidsBySize["28"].map((img) => img.src),
       images: [
         images.jaboneros_campana_con_tapas.src,
         images.jaboneros_campana_con_cremera.src,

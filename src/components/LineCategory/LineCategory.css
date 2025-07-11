@@ -17,9 +17,14 @@
   margin: 0;
 }
 
+.lineCategory small {
+  text-align: center;
+}
+
 .lids {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   gap: 0.5rem;
 }

@@ -136,7 +136,7 @@ const imageModules = import.meta.glob("../photos/*.jpg", {
 });
 
 //CODE FOR GENERATING THE TYPES (KIND OF)
-const generatedImageData: Record<string, string> = {};
+/*const generatedImageData: Record<string, string> = {};
 
 for (const path in imageModules) {
   const filename = path.split("/").pop()!.replace(".jpg", "");
@@ -152,7 +152,7 @@ for (const path in imageModules) {
 console.log(
   "✅ Paste this into your code:\n\n",
   JSON.stringify(generatedImageData, null, 2)
-);
+);*/
 
 for (const path in imageModules) {
   const src = imageModules[path] as string;
